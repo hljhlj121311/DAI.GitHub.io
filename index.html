@@ -84,7 +84,7 @@
 
         <div id="culture" class="section">
             <h2>关于自由与多元化促进会</h2>
-            <p>此通讯社是自由与多元化促进会的一个分支，专用于处理班级内务。详情请见[link:自由与多元化促进会（FDO）𖤓](https://fdo-page.github.io/startpage/)</p>
+            <p>此通讯社是自由与多元化促进会的一个分支，专用于处理班级内务。详情请见自由与多元化促进会（FDO）𖤓(https://fdo-page.github.io/startpage/)</p>
         </div>
 
         <div id="tourism" class="section">
@@ -92,6 +92,7 @@
             <p>这里是十二班通讯社首页，该页面还在编辑中，欢迎你提出宝贵的意见和想法</p>
         </div>
 
+        <a href="https://fdo-page.github.io/startpage/">自由与多元化促进会（FDO）𖤓</a>
         <div id="contact" class="section">
             <h2>联系我们</h2>
             <p>如果您有任何问题，或者想要发表文章和评论，请联系我们：</p>
@@ -103,28 +104,6 @@
     <footer>
         <p>&copy; 2024 十二班通讯社官方网站. 该页面还在施工中。。。</p>
     </footer>
-       
-    <script>
-        function processLinks() {
-            const content = document.querySelector('.content');
-            content.innerHTML = content.innerHTML.replace(/\[link:(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank">$1</a>');
-        }
-        
-        function processLineBreaks() {
-            const content = document.querySelector('.content');
-            content.innerHTML = content.innerHTML.replace(/\\n/g, '<br>');
-        }
 
-        function processImages() {
-            const content = document.querySelector('.content');
-            content.innerHTML = content.innerHTML.replace(/\[image:\s*(.*?)\]/g, '<img src="$1" alt="Image">');
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            processLinks();
-            processLineBreaks();
-            processImages();
-        });
-    </script
 </body>
 </html>
