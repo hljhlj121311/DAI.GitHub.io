@@ -89,7 +89,7 @@
 
         <div id="tourism" class="section">
             <h2>关于此页面</h2>
-            <p>这里是十二班通讯社首页，该页面还在编辑中，欢迎提出你宝贵的意见</p>
+            <p>这里是十二班通讯社首页，该页面还在编辑中，欢迎你提出宝贵的意见和想法</p>
         </div>
 
         <div id="contact" class="section">
@@ -103,5 +103,28 @@
     <footer>
         <p>&copy; 2024 十二班通讯社官方网站. 该页面还在施工中。。。</p>
     </footer>
+       
+    <script>
+        function processLinks() {
+            const content = document.querySelector('.content');
+            content.innerHTML = content.innerHTML.replace(/\[link:(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank">$1</a>');
+        }
+        
+        function processLineBreaks() {
+            const content = document.querySelector('.content');
+            content.innerHTML = content.innerHTML.replace(/\\n/g, '<br>');
+        }
+
+        function processImages() {
+            const content = document.querySelector('.content');
+            content.innerHTML = content.innerHTML.replace(/\[image:\s*(.*?)\]/g, '<img src="$1" alt="Image">');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            processLinks();
+            processLineBreaks();
+            processImages();
+        });
+    </script
 </body>
 </html>
